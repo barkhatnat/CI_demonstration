@@ -1,0 +1,12 @@
+language: java
+jdk: oraclejdk17
+before_install:
+  - mvn --version
+script:
+  - mvn clean install
+notifications:
+  email:
+    recipients:
+      - natabarkhatova@yandex.ru
+    on_success: always # default: change
+    on_failure: always # default: always
